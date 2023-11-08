@@ -1,0 +1,74 @@
+{
+  "name": "Tapestry",
+  "display": "Tapestry",
+  "version": "1.0.1",
+  "subtitle": "Beautiful wallpapers daily",
+  "description": "Beautiful wallpapers from Unsplash, available daily. Not affiliated with nor endorsed by Unsplash Inc.",
+  "type": "certified",
+  "launch_path": "/index.html",
+  "icons": {
+    "56": "/logo_56.png",
+    "112": "/logo_112.png"
+  },
+  "categories": [
+    "utilities"
+  ],
+  "theme_color": "#00897b",
+  "developer": {
+    "name": "Last Byte LLC",
+    "url": "https://github.com/Tombarr"
+  },
+  "cursor": false,
+  "fullscreen": false,
+  "chrome": {
+    "statusbar": "overlap"
+  },
+  "dependencies": {
+    "ads-sdk": "1.5.5"
+	},
+  "permissions": {
+    "settings:wallpaper.image": {
+      "description": "Set system wallpaper",
+      "access": "readwrite"
+    },
+    "systemXHR": {
+      "description": "Download wallpapers"
+    },
+    "sandboxed-cookies": {
+      "description": "Sandbox cookies"
+    },
+    "serviceworker": {
+      "description": "Offline usage and notifications"
+    },
+    "desktop-notification": {
+      "description": "Display notifications"
+    },
+    "mobiledata": {
+      "description": "Use mobile data"
+    },
+    "wifidata": {
+      "description": "Use wifi data"
+    },
+    "requestsync-manager": {
+      "description": "Automatically set wallpaper"
+    },
+    "device-storage:pictures": {
+      "description": "Save wallpapers to Gallery",
+      "access": "readwrite"
+    }
+  },
+  "messages": [
+    { "serviceworker-notification": "/index.html" },
+    { "activity": "/index.html" },
+    { "request-sync": "/index.html" }
+  ],
+  "locales": {
+    "en-US": {
+      "name": "Tapestry",
+      "subtitle": "Beautiful wallpapers daily",
+      "description": "Beautiful wallpapers from Unsplash, available daily. Not affiliated with nor endorsed by Unsplash Inc."
+    }
+  },
+  "default_locale": "en-US",
+  "orientation": [ "portrait-primary", "landscape-primary" ]
+}
